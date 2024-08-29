@@ -1,0 +1,169 @@
+body:after {
+    background-color:#00562791;
+}
+
+
+/* one */
+.special > h2{
+    color : #0f6c3a;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    background-color: #989e8e;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 900px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    border-radius: 900px;
+    border : 5px double #0f6c3a;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1; 
+}
+
+/* two */
+#two{
+    background-color: #2f4536;
+}
+
+#two header{
+   background-color: #a88a6169;
+}
+
+#two .content .gallery img {
+    transition: transform 0.3s ease, z-index 0s ease 0.3s; 
+    position: relative; 
+}
+
+#two .content .gallery img:hover {
+    transform: scale(1.05); 
+    z-index: 10; 
+    transition: transform 0.3s ease, z-index 0s ease 0s; 
+}
+
+.gallery .image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: rgb(226, 220, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 1.3s ease; /
+    z-index: 5; 
+}
+
+.gallery .image .overlay p{
+    font-size: 13px;
+    color: white;
+}
+
+.gallery .image:hover .overlay {
+    opacity: 1; /* 마우스를 올렸을 때 오버레이 보이기 */
+}
+
+/* three */
+
+#three .spotlight{
+    height: 400px;
+}
+#three iframe{
+   position: relative;
+   left: 20px;
+   top:10px;
+}
+
+#three img:nth-child(1){
+    width: 100%;
+}
+
+.spotlight.alt {
+    width: 100%;
+    position: relative; 
+    display: inline-block; 
+}
+
+.spotlight.alt img {
+    width: 100%; 
+    height: 100%;
+}
+
+.spotlight.alt .text-overlay {
+    position: absolute; 
+    top: 100px; 
+    left: 40px; 
+    color: white; 
+    font-size: 15px; 
+    font-weight: 500; 
+    text-align: left;
+}
+
+.mug-image-container{
+    width: 200px;
+    float: left;
+    margin: 20px;
+
+}
+
+.spotlight2{
+    width: 100%;
+    height: 300px;
+    display : flex;
+    justify-content:center;
+    padding-top: 20px;
+}
+
+.spotlight2 .inner{
+    width: 80%;
+    height: 300px;
+  
+}
+
+.mug-image-container img{
+   border: 5px dotted #2f4536;
+    border-radius: 20px;
+}
+
+.button.special{
+    width: 300px;
+    margin-bottom: 15px;
+    margin-top: -20px;
+    
+}
+
+#button-mug{
+    display : flex;
+    justify-content:center;
+}
